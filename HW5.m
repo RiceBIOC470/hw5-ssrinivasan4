@@ -1,4 +1,14 @@
 %HW5
+%GB comments:
+1a 100
+1b 100
+1c 100
+1d 100
+2yeast: 40 I return a empty image with no mask produced. If you can show me that your code works on your computer I am happy to change this. 
+2worm: 85Currently your script is instructing to create an large mask that frames the whole image. Second, the mask is pretty noisy in that there is a lot of speckled masks that could easily be removed using bwareaopen or imerode(becareful with this one). 
+2bacteria: 50 I do not return a mask image of the file. 
+2phase: 90 many of  your objects are empty rings. One could play around with your thresholding parameters to decrease the chances of rings initially appearing or use Illastik to grab the most important elements in your image for segmentation .  
+Overall: 83
 
 % Note. You can use the code readIlastikFile.m provided in the repository to read the output from
 % ilastik into MATLAB.
